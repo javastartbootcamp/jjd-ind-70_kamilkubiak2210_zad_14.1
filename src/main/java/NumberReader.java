@@ -5,7 +5,7 @@ import java.util.*;
 
 public class NumberReader {
 
-    public TreeMap<Integer, Integer> listOfNumbers(String fileName) throws IOException {
+    public TreeMap<Integer, Integer> mapOfNumbers(String fileName) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
         String line;
         TreeMap<Integer, Integer> newList = new TreeMap<>(Integer::compareTo);

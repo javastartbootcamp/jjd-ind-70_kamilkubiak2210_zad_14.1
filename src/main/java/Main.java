@@ -7,8 +7,8 @@ public class Main {
         String fileName = "src/main/resources/liczby.txt";
         try {
             NumberReader numberReader = new NumberReader();
-            if (!numberReader.listOfNumbers(fileName).isEmpty()) {
-                TreeMap<Integer, Integer> integerMap = numberReader.listOfNumbers(fileName);
+            TreeMap<Integer, Integer> integerMap = numberReader.mapOfNumbers(fileName);
+            if (!integerMap.isEmpty()) {
                 numberReader.printListOfNumbers(integerMap);
             } else {
                 System.err.println("Lista jest pusta");
